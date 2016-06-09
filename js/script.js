@@ -39,8 +39,16 @@
 		// Stellar.js Div
 		//-----------------------------------------------
 		$.stellar({
-			horizontalScrolling: false
+			horizontalScrolling: false,
+			hideDistantElements: true
 		});
+
+
+		// $('.banner-img').stellar({
+		// 	horizontalOffset: 0,
+		//   verticalOffset: 0
+		// });
+
 
 
 
