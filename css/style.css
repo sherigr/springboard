@@ -256,6 +256,11 @@ p {
   background-size: cover; 
   overflow: hidden;
 }
+
+/*.yoga-text {
+  position: absolute;
+}*/
+
 #yoga h2 {
   /*margin-top: 50%;*/
   padding-top: 50%;
@@ -381,10 +386,19 @@ p {
     padding-bottom: 20px;
   }
 }
-@media (max-width:991px) {
+/*@media (max-width:991px) {
   .fixed-header-on .springboard-logo,
   .fixed-header-on .springboard-name,
   .fixed-header-on .springboard-slogan {
     display: none;
+  }
+}*/
+
+@media (max-width: 991px) {
+  .laura-img {
+    margin: 0 auto;
+  }
+  .about-text :first-of-type {
+    padding-top: 25px;
   }
 }
