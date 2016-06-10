@@ -232,8 +232,6 @@ p {
   background-size: cover;
 }*/
 
-/* TEST 
-------------------------- */
 #yoga {
     overflow: auto;
     width: 100%;
@@ -257,27 +255,17 @@ p {
   overflow: hidden;
 }
 
-/*.yoga-text {
-  position: absolute;
-}*/
 
 #yoga h2 {
-  /*margin-top: 50%;*/
   padding-top: 50%;
   font-size: 36px;
   letter-spacing: 2px;
   /*color: #A5FFE0;*/
   color: #fff;
   text-shadow: 3px 3px #000;
+  position: absolute;
 }
 
-  /* End Test ======================= */
-
-/*.yoga h2 {
-  margin-top: 50%;
-  color: #fff;
-  font-size: 36px;
-}*/
 /***********************
   SERVICES
   ***************************/
@@ -299,7 +287,8 @@ p {
   ABOUT
   ***************************/
   .rounded-img {
-    width: 300px;
+    /*width: 300px;*/
+    width: 50%;
     border-radius: 20px;
   }
 
@@ -328,6 +317,7 @@ p {
 }
 
 .quote-img {
+  width: 65%;
   /*box-shadow: 20px 0px 10px 0px rgba(0,0,0,0.5);*/
   box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.5);
 }
@@ -386,13 +376,14 @@ p {
     padding-bottom: 20px;
   }
 }
-/*@media (max-width:991px) {
+@media (max-width:991px) {
   .fixed-header-on .springboard-logo,
   .fixed-header-on .springboard-name,
   .fixed-header-on .springboard-slogan {
     display: none;
   }
-}*/
+}
+/*-------------------------------------*/
 
 @media (max-width: 991px) {
   .laura-img {
@@ -400,5 +391,25 @@ p {
   }
   .about-text :first-of-type {
     padding-top: 25px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .quote-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .laura-img {
+    width: 40%;
+  }
+  .quote-img {
+    width: 40%;
+  }
+}
+@media (min-width: 480px) and (max-width: 736px) {
+  #yoga h2 {
+    padding-top: 20%;
   }
 }
