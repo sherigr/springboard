@@ -317,7 +317,6 @@ p {
 }
 
 .quote-img {
-  width: 65%;
   /*box-shadow: 20px 0px 10px 0px rgba(0,0,0,0.5);*/
   box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.5);
 }
@@ -367,6 +366,14 @@ p {
   .header.navbar-fixed-top {
     position: absolute;
   }
+  /* change if change navbar collapse breakpoint*/
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.6);
+    /*text-align: center;*/
+  }
+  .navbar-default .navbar-collapse {
+    border-color: transparent;
+  }
 }
 /* Fixed Header 
 -------------------------------------*/
@@ -394,17 +401,18 @@ p {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .quote-img {
-    width: 50%;
+/*@media (min-width: 769px) and (max-width: 1024px) {
+  .quote-img {    
+    width: 40%;
   }
-}
+}*/
 
 @media (max-width: 768px) {
   .laura-img {
     width: 40%;
   }
   .quote-img {
+    margin: 20px auto;
     width: 40%;
   }
 }
