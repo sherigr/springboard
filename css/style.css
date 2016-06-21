@@ -6,7 +6,7 @@ html, body {
 body {
 	font-family: 'Lato', sans-serif;
   font-weight: 300;
-  /*need this position for scrollspy*/
+  /*need relative position for scrollspy*/
   position: relative;
 }
 
@@ -69,7 +69,7 @@ p {
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-  color: #55acee;
+  color: #FFFF00; /* yellow */
 }
 /* Fixed Header
 ----------------------------------- */
@@ -82,6 +82,7 @@ p {
 }
 .fixed-header-on .springboard-logo {
   -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   transform: scale(0.8);
   margin-top: 0;
   margin-bottom: 0;
@@ -176,6 +177,8 @@ p {
   background-size: cover; 
   overflow: hidden;
   }
+  /*try adding (to .banner-img) position absolute, top & left 0 to
+  fix positioning with Scrolljs */
 /* End Test ======================= */
 
 .banner-text {
@@ -276,6 +279,7 @@ p {
 }
 
 #services h2 {
+  margin-top: 40px;
   font-weight: 400;
 }
 
@@ -283,21 +287,23 @@ p {
   padding-bottom: 60px;
 }
 
+
+
+
+
   /***********************
   ABOUT
   ***************************/
   .rounded-img {
-    /*width: 300px;*/
     width: 50%;
     border-radius: 20px;
   }
 
   .laura-img {
     box-shadow: -20px -10px 10px 0px rgba(0,0,0,0.5);
-
   }
 
-  /***********************
+/***********************
   CONTACT
   ***************************/
 .contact-icons {
@@ -362,15 +368,19 @@ p {
   }
 }
 /* remove if want to keep navbar on phone*/
-@media (max-width:767px) {
+/*@media (max-width:767px) {
   .header.navbar-fixed-top {
     position: absolute;
-  }
+  }*/
   /* change if change navbar collapse breakpoint*/
-  .navbar-collapse {
+/*  .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.6);
-    /*text-align: center;*/
-  }
+  }*/
+  /* add color only when collapse open*/
+  .collapse.in {
+    background-color: rgba(0, 0, 0, 0.6);
+  } /*remove above background color to keep dropdown same
+  color as navbar */
   .navbar-default .navbar-collapse {
     border-color: transparent;
   }
@@ -383,13 +393,13 @@ p {
     padding-bottom: 20px;
   }
 }
-@media (max-width:991px) {
+/*@media (max-width:991px) {
   .fixed-header-on .springboard-logo,
   .fixed-header-on .springboard-name,
   .fixed-header-on .springboard-slogan {
     display: none;
   }
-}
+}*/
 /*-------------------------------------*/
 
 @media (max-width: 991px) {
