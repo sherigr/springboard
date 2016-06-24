@@ -74,7 +74,9 @@ p {
 /* Fixed Header
 ----------------------------------- */
 .fixed-header-on .header {
-  background-color: #313233;
+  /*background-color: #313233;*/
+  background-color: #fff;
+  border-bottom: 1px solid #BEBEBA;
   padding: 5px 0;
 }
 .fixed-header-on .springboard-name {
@@ -86,6 +88,13 @@ p {
   transform: scale(0.8);
   margin-top: 0;
   margin-bottom: 0;
+}
+.fixed-header-on .main-navigation .navbar-default .navbar-nav > li > a {
+  /*color: #BEBFB7;*/
+  color: #999993;
+}
+.fixed-header-on .navbar-default .navbar-toggle  {
+  border-color: transparent;
 }
 /* Logo, Site Name, Site Slogan
 ---------------------------------- */
@@ -329,7 +338,10 @@ p {
     padding-right: 0;
   }
   .navbar-nav {
-    float: left !important;
+    /*float: left !important;*/
+  }
+  .navbar-default .navbar-collapse {
+    border-color: transparent;
   }
 }
 /* remove if want to keep navbar on phone*/
@@ -341,21 +353,55 @@ p {
 /*  .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.6);
   }*/
+
   /* add color only when collapse open*/
-  .collapse.in {
+/*  .collapse.in {
     background-color: rgba(0, 0, 0, 0.6);
-  } /*remove above background color to keep dropdown same
+  }*/ /*remove above background color to keep dropdown same
   color as navbar */
-  .navbar-default .navbar-collapse {
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-toggle {
     border-color: transparent;
   }
+/*  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  } */
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
 }
+
+@media (max-width: 320px) {
+  .navbar-toggle {
+    position: absolute;
+  }
+  .fixed-header-on .springboard-logo {
+    margin-left: -10px;
+  }
+}
+
+
 /* Fixed Header 
 -------------------------------------*/
 @media (min-width:768px) {
   .fixed-header-on .navbar-default .navbar-nav > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .springboard-slogan {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .fixed-header-on .header {
+    padding-bottom: 0;
+  }
+  .main-navigation .navbar-default .navbar-nav > li {
+    border-bottom: 1px solid #D8D8D5;
   }
 }
 /*@media (max-width:991px) {
@@ -365,6 +411,7 @@ p {
     display: none;
   }
 }*/
+
 /*-------------------------------------*/
 @media (min-width: 992px) {
   .row.svc-second-row {
@@ -404,3 +451,14 @@ p {
     padding-top: 20%;
   }
 }
+/*@media (max-width: 320px) {
+  .banner-text h1 {
+    font-size: 35px;
+  }
+  h1, #yoga h2 {
+    font-size: 30px;
+  }
+  #banner h3 {
+    font-size: 20px;
+  }
+}*/
