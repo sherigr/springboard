@@ -30,8 +30,10 @@
 			if (($(".header.fixed").length > 0)) { 
 				if(($(this).scrollTop() > 0) && ($(window).width() > 100)) {
 					$("body").addClass("fixed-header-on");
+					$("img.logo-color").attr('src', 'img/springboard75.png');
 				} else {
 					$("body").removeClass("fixed-header-on");
+					$("img.logo-color").attr('src', 'img/springboard75white.png');
 				}
 			};
 		});
