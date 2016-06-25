@@ -62,11 +62,7 @@ p {
   font-size: 16px;
   font-weight: 300;
 }
-.main-navigation .navbar-default .navbar-nav > li.active > a {
-  background-color: transparent;
-  /*color: #FFFF00; */ /* yellow */
-  color: #A5FFE0; /* turquois */
-}
+
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
   color: #FFFF00; /* yellow */
@@ -92,6 +88,12 @@ p {
 .fixed-header-on .main-navigation .navbar-default .navbar-nav > li > a {
   /*color: #BEBFB7;*/
   color: #999993;
+}
+/* scroll spy overide color*/
+.main-navigation .navbar-default .navbar-nav > li.active > a {
+  background-color: transparent;
+  /*color: #FFFF00; */ /* yellow */
+  color: #A5FFE0; /* turquois */
 }
 .fixed-header-on .navbar-default .navbar-toggle  {
   border-color: transparent;
