@@ -356,11 +356,14 @@ p {
     background-color: rgba(0, 0, 0, 0.6);
   }*/
 
-  /* add color only when collapse open*/
-/*  .collapse.in {
+  /* add color only when transparent collapse open*/
+  .collapse.in {
     background-color: rgba(0, 0, 0, 0.6);
-  }*/ /*remove above background color to keep dropdown same
+  } /*remove above background color to keep dropdown same
   color as navbar */
+  .fixed-header-on .collapse.in {
+    background-color: #fff;
+  }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-toggle {
@@ -372,7 +375,13 @@ p {
   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
   }
-
+  /* make white only when background transparent*/
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .fixed-header-on .navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+  }
 }
 
 @media (max-width: 320px) {
@@ -402,7 +411,7 @@ p {
   .fixed-header-on .header {
     padding-bottom: 0;
   }
-  .main-navigation .navbar-default .navbar-nav > li {
+  .main-navigation .navbar-default .navbar-nav > li:not(:last-of-type) {
     border-bottom: 1px solid #D8D8D5;
   }
 }
