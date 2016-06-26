@@ -63,10 +63,7 @@ p {
   font-weight: 300;
 }
 
-.main-navigation .navbar-default .navbar-nav > li > a:hover,
-.main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-  color: #FFFF00; /* yellow */
-}
+
 /* Fixed Header
 ----------------------------------- */
 .fixed-header-on .header {
@@ -94,6 +91,10 @@ p {
   background-color: transparent;
   /*color: #FFFF00; */ /* yellow */
   color: #A5FFE0; /* turquois */
+}
+.main-navigation .navbar-default .navbar-nav > li > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a:hover {
+  color: #D6D6D3; 
 }
 .fixed-header-on .navbar-default .navbar-toggle  {
   border-color: transparent;
