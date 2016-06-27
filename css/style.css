@@ -109,8 +109,7 @@ p {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.springboard-logo,
-.springboard-with-slogan {
+.springboard-logo {
   float: left;
 }
 .springboard-name {
@@ -129,9 +128,11 @@ p {
 }
 .springboard-slogan {
   font-size: 13px;
-  color: #FFFF00; /* yellow */
-  color: #A5FFE0; /* turquois */
+  /*color: #FFFF00;*/ /* yellow */
+  /*color: #A5FFE0;*/ /* turquois */
+  color: #003900;  /*dark green */
 }
+
 
 /*********************
   Banner
@@ -410,11 +411,7 @@ p {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 768px) {
-  .springboard-slogan {
-    display: none;
-  }
-}
+
 @media (max-width: 767px) {
   .fixed-header-on .header {
     padding-bottom: 0;
@@ -463,6 +460,9 @@ p {
 }*/
 
 @media (max-width: 768px) {
+  .section {
+    padding: 70px 0 0 0;
+  }
   .laura-img {
     width: 40%;
   }
