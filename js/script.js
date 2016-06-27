@@ -31,6 +31,7 @@
 				if(($(this).scrollTop() > 0) && ($(window).width() > 100)) {
 					$("body").addClass("fixed-header-on");
 					$("img.logo-color").attr('src', 'img/springboard75.png');
+					$(".springboard-slogan").css({'display':'none'});
 				} else {
 					$("body").removeClass("fixed-header-on");
 					$("img.logo-color").attr('src', 'img/springboard75white.png');
@@ -43,6 +44,7 @@
 			if (($(".header.fixed").length > 0)) { 
 				if(($(this).scrollTop() > 0) && ($(window).width() > 100)) {
 					$("body").addClass("fixed-header-on");
+					$(".springboard-slogan").css({'display':'none'});
 				} else {
 					$("body").removeClass("fixed-header-on");
 				}
@@ -53,6 +55,10 @@
     $(".navbar-nav li a").click(function(event) {
       $(".navbar-collapse").collapse('hide');
     });
+
+      // Scroll To Top Of Page
+    //--------------------------------------------
+
 
 
 				//Scroll Spy
@@ -82,12 +88,29 @@
 		//   verticalOffset: 0
 		// });
 
+	
+			//Smooth Scroll
+		//-----------------------------------------------
+		//Smooth Scroll
+		//-----------------------------------------------
+		if ($(".smooth-scroll").length>0) {
+			$('.smooth-scroll a[href*=#]:not([href=#]), a[href*=#]:not([href=#]).smooth-scroll').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top-151
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		}
 
 
-
-		/*==========================================
-    FOOTER
-  =====================================================*/
+   // FOOTER
+  //---------------------------------------------------
 
   var today = new Date();
   var year = today.getFullYear();
