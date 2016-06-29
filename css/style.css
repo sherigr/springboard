@@ -1,4 +1,7 @@
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
 html, body {
   height: 100%;
 }
@@ -84,7 +87,7 @@ p {
 }
 .fixed-header-on .main-navigation .navbar-default .navbar-nav > li > a {
   /*color: #BEBFB7;*/
-  color: #999993;
+  color: #999993; /* dark grey*/
 }
 /* scroll spy overide color*/
 .main-navigation .navbar-default .navbar-nav > li.active > a {
@@ -144,7 +147,7 @@ p {
   position: relative;
   color: #ffffff;
 }
-.banner-img {
+#banner-img {
   /*background: url(../img/banner-med.jpg);*/
   background-image: url(../img/banner-med.jpg);
   background-repeat: no-repeat;
@@ -158,7 +161,23 @@ p {
   -o-background-size: cover;
   background-size: cover; 
   overflow: hidden;
-  }
+}
+  /* Parallax */
+/*  #banner-img {
+  background-image: url(../img/banner-med.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  overflow: hidden;
+  } */
 
 .banner-text {
   top: 40%;
@@ -170,11 +189,14 @@ p {
 }
 
 .banner-text h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 50px;
   color: #ffffff;
 }
 
 .banner-text h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -184,7 +206,7 @@ p {
   font-style: italic;
 }
 
-.banner-img:after {
+#banner-img:after {
   content: "";
   position: absolute;
   top: 0;
@@ -394,8 +416,8 @@ p {
 
 @media (max-width: 320px) {
   .navbar-toggle {
-    position: absolute;
-    padding: 9px 30px;
+/*    position: absolute;
+    padding: 9px 30px;*/ /* remove since added col xs */
   }
   .fixed-header-on .springboard-logo {
     margin-left: -10px;
@@ -409,6 +431,12 @@ p {
   .fixed-header-on .navbar-default .navbar-nav > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .springboard-slogan {
+    display: none;
   }
 }
 
@@ -429,6 +457,14 @@ p {
 }*/
 
 /*-------------------------------------*/
+@media (min-width: 1920px) {
+   #banner-img {
+  background-image: url(../img/banner-lg.jpg);
+  }
+  #yoga .yoga-img {
+  background-image: url(../img/yoga-lg.jpg);
+  }
+}
 @media (min-width: 1024px) {
   #contact {
     padding-bottom: 100px;
@@ -470,6 +506,17 @@ p {
     margin: 20px auto;
     padding-top: 20px;
     width: 40%;
+  }
+  #banner-img {
+  background-image: url(../img/banner-sm.jpg);
+  }
+  #yoga .yoga-img {
+  background-image: url(../img/yoga-sm.jpg);
+  }
+}
+@media (max-width: 736px) {
+  .banner-text h1 {
+    font-size: 36px;
   }
 }
 @media (min-width: 480px) and (max-width: 736px) {
