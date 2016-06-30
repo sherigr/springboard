@@ -26,69 +26,49 @@
   </head>
   
   <body>
-
-    <!-- header --> 
-    <!-- <header class="header fixed clearfix navbar navbar-fixed-top"> -->
     <header class="header fixed navbar navbar-fixed-top">
+
+      <div class="main-navigation animated">
+
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand springboard-logo smooth-scroll" href="#"><img id="logo" class="logo-color" alt="Springboard Logo"></a>
+            </div> <!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse scrollspy" id="navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#services">Services</a></li>
+                <!--adding yoga li to remove scroll spy -->
+                <li class="noSpy"><a href="#yoga"></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+           </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div> <!-- main navigation -->
+
       <div class="container">
-        <div class="row">
-          <div class="col-xs-4 col-md-4">
-
-            <!-- header-left start -->
-            <div class="header-left">
-              <div class="springboard-logo smooth-scroll">
-                <!-- <a href="#"><img id="logo" class="logo-color" src="img/springboard75white.png" alt="Springboard Logo"></a> -->
-                <a href="#"><img id="logo" class="logo-color" alt="Springboard Logo"></a>
-              </div> <!-- springboard-logo -->
-<!--               <div class="springboard-slogan"><i>Recover&nbsp;&middot;&nbsp;Achieve&nbsp;&middot;&nbsp;Evolve&nbsp;&middot;&nbsp;Transform</i></div>
-              </div> -->
-            </div>  <!-- </header-left -->          
-          </div> <!-- </col-md-4 -->
-
-          <div class="col-xs-8 col-md-8">
-            <!-- header-right start -->
-            <!-- <div class="header-right clearfix"> -->
-            <div class="header-right">
-              <!-- main-navigation start -->
-              <div class="main-navigation animated">
-                <!-- navbar start -->
-                <nav class="navbar navbar-default" role="navigation">
-                  <div class="container-fluid">
-                    <!-- Toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#philosophy">Philosophy</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <!--adding yoga li to remove scroll spy -->
-                        <li class="noSpy"><a href="#yoga"></a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>  <!-- </container-fluid -->
-                </nav>  <!-- </navbar-->
-              </div>  <!-- </main-navigation -->
-            </div>   <!-- header-right end -->
-          
-          </div>  <!-- </col-md-8 -->
-        </div>  <!-- </row -->
-        <div class="col-md-4 springboard-slogan"><i>Recover&nbsp;&middot;&nbsp;Achieve&nbsp;&middot;&nbsp;Evolve&nbsp;&middot;&nbsp;Transform</i></div>
-      </div>  <!-- </container -->
+      <!--   <div class="row">  -->
+        <div class="col-md-4 springboard-slogan"><em>Recover&nbsp;&middot;&nbsp;Achieve&nbsp;&middot;&nbsp;Evolve&nbsp;&middot;&nbsp;Transform</em></div>
+       <!--  </div> --> <!-- ./row -->
+      </div>  <!-- /.container -->    
     </header>
-    <!-- ./header --> 
+
+ 
 
     <!-- main banner image -->
     <section id="banner" class="main-banner">
-      <div id="banner-img" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-350">
+      <div id="banner-img">
        <!--  <img src="img/croppedBanner.jpg" alt=""> -->
        <div class="banner-text">
          <div class="container">

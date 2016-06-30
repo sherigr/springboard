@@ -44,7 +44,7 @@ p {
 ******************************/
 .header {
   color: #ffffff;
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -53,7 +53,7 @@ p {
 }
 
 .header .navbar {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 .main-navigation .navbar-default {
   background-color: transparent;
@@ -61,7 +61,7 @@ p {
 }
 .main-navigation .navbar-default .navbar-nav > li > a {
   color: #fff;
-  padding: 10px 20px;
+ /* padding: 10px 20px;*/
   font-size: 16px;
   font-weight: 300;
 }
@@ -73,7 +73,8 @@ p {
   /*background-color: #313233;*/
   background-color: #fff;
   border-bottom: 1px solid #BEBEBA;
-  padding: 5px 0;
+  /*padding: 5px 0;*/ /* off for new test */
+  padding: 5px 0 30px; /* for new nav test */
 }
 .fixed-header-on .springboard-name {
   font-size: 24px;
@@ -82,8 +83,8 @@ p {
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  margin-top: 0;
-  margin-bottom: 0;
+/*  margin-top: 0;
+  margin-bottom: 0;*/
 }
 .fixed-header-on .main-navigation .navbar-default .navbar-nav > li > a {
   /*color: #BEBFB7;*/
@@ -105,15 +106,17 @@ p {
 /* Logo, Site Name, Site Slogan
 ---------------------------------- */
 .springboard-logo {
-  margin: 10px 10px 10px 0;
+ /* margin: 10px 10px 10px 0; removed for test*/
+  
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .springboard-logo {
-  float: left;
+ /* float: left;*/
 }
 .springboard-name {
   font-size: 36px;
@@ -134,8 +137,20 @@ p {
   /*color: #FFFF00;*/ /* yellow */
   /*color: #A5FFE0;*/ /* turquois */
   color: #003900;  /*dark green */
+  padding-top: 20px; /* for new navbar test*/
 }
 
+/* ADDED FOR NEW NAVBAR TEST */
+.navbar-brand>img {
+  margin: 0 0 0 130px; 
+ }
+.navbar-right {
+  margin: 5px 100px 0 0;
+ }
+.fixed-header-on .header .navbar {
+  margin-bottom: 0;
+ }
+ /* ---------- */
 
 /*********************
   Banner
@@ -349,8 +364,8 @@ p {
 -------------------------*/
 @media (min-width:768px) {
   .main-navigation .navbar-default .navbar-nav > li > a {
-    padding-top: 30px;
-    padding-bottom: 30px;
+   /* padding-top: 30px;
+    padding-bottom: 30px; removed both for new test*/
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -360,8 +375,8 @@ p {
 }
 @media (min-width:768px) and (max-width:991px) {
   .main-navigation .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+  /*  padding-left: 0;
+    padding-right: 0;* removed for new test/
   }
   .navbar-nav {
     /*float: left !important;*/
@@ -370,16 +385,6 @@ p {
     border-color: transparent;
   }
 }
-/* remove if want to keep navbar on phone*/
-/*@media (max-width:767px) {
-  .header.navbar-fixed-top {
-    position: absolute;
-  }*/
-  /* change if change navbar collapse breakpoint*/
-/*  .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.6);
-  }*/
-
   /* add color only when transparent collapse open*/
   .collapse.in {
     background-color: rgba(0, 0, 0, 0.6);
@@ -410,7 +415,7 @@ p {
 
 @media (max-width: 667px) {
   .springboard-logo img {
-    height: 60px;
+   height: 60px; 
   }
 }
 
@@ -420,17 +425,53 @@ p {
     padding: 9px 30px;*/ /* remove since added col xs */
   }
   .fixed-header-on .springboard-logo {
-    margin-left: -10px;
+    /*margin-left: -10px;*/ /*removed for new test*/
   }
 }
+/* NEW NAVBAR TESTS */
+@media (max-width: 1024px) {
+  .navbar-brand>img {
+    margin: 0 0 0 10px;
+  }
+  .navbar-right {
+    margin: 25px 20px 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fixed-header-on .header {
+    padding: 5px 0;
+  }
+}
+@media (max-width: 767px) {
+  .fixed-header-on .header {
+    padding: 0;
+  }
+  .main-navigation .navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+  }
+  .fixed-header-on .header .navbar {
+    margin-bottom: -10px;
+  }
+}
+@media (max-width: 735px) {
+  .navbar-toggle {
+    padding: 25px 20px;
+  }
+}
+@media (min-width: 736px) and (max-width: 767px) {
+  .navbar-toggle {
+    padding: 30px 20px;
+  }
+}
+/* ------------------- */
 
 
 /* Fixed Header 
 -------------------------------------*/
 @media (min-width:768px) {
   .fixed-header-on .navbar-default .navbar-nav > li > a {
-    padding-top: 20px;
-    padding-bottom: 20px;
+   /* padding-top: 20px;
+    padding-bottom: 20px; removed both for new test*/
   }
 }
 
@@ -442,7 +483,7 @@ p {
 
 @media (max-width: 767px) {
   .fixed-header-on .header {
-    padding-bottom: 0;
+   /* padding-bottom: 0; removed for test*/
   }
   .main-navigation .navbar-default .navbar-nav > li:not(:last-of-type) {
     border-bottom: 1px solid #D8D8D5;
@@ -458,7 +499,7 @@ p {
 
 /*-------------------------------------*/
 @media (min-width: 1920px) {
-   #banner-img {
+  #banner-img {
   background-image: url(../img/banner-lg.jpg);
   }
   #yoga .yoga-img {
@@ -522,6 +563,11 @@ p {
 @media (min-width: 480px) and (max-width: 736px) {
   #yoga h2 {
     padding-top: 20%;
+  }
+}
+@media (max-width: 414px) {
+  .quote-img {
+    width: 50%;
   }
 }
 @media (max-width: 320px) {
