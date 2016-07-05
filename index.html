@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--     <meta name="description" content="Springboard is a practice of bespoke physical therapy: completely custom and individualized to you. The philosophy is far reaching but singular: injury is a chance for you to become better. That means get well, recover, re-prioritize, renew, and evolve.">
+    <meta name="author" content="Sheri Grossman">
+    <meta name="keywords" content="physical therapy, bespoke pt, custom physical therapy, recover, renew, evolve, transform, muscles, training, workout">
+    <meta name="robots" content="index, follow"> -->
+
     <title>Springboard</title>
    
-   <!-- once I've decided on fonts, refactor font links -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700|Lato:400,300|Raleway:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -17,12 +20,45 @@
 
     <link href="css/style.css" rel="stylesheet" type="text/css"> 
 
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favs/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favs/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- GA -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-80272291-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   
   <body>
@@ -40,7 +76,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand springboard-logo smooth-scroll" href="#"><img id="logo" class="logo-color" alt="Springboard Logo"></a>
+              <a class="navbar-brand springboard-logo" href="#"><img id="logo" class="logo-color" alt="Springboard Logo"></a>
             </div> <!-- /.navbar-header -->
 
             <div class="collapse navbar-collapse scrollspy" id="navbar-collapse-1">
@@ -64,8 +100,6 @@
       </div>  <!-- /.container -->    
     </header>
 
- 
-
     <!-- main banner image -->
     <section id="banner" class="main-banner">
       <div id="banner-img">
@@ -74,7 +108,7 @@
          <div class="container">
            <div class="row">
              <div class="col-md-8 col-md-offset-2 text-center">
-               <h1>Injury is an opportunity...<span class="springboard-banner-text"> Springboard</h1>  
+               <h1>Injury is an opportunity...<span class="springboard-banner-text"> Springboard</span></h1>  
                <h3><em>Bespoke PT</em></h3>
              </div> <!-- </col> -->
            </div> <!-- </row -->
@@ -117,53 +151,48 @@
           <div class="row">
             <div class="col-md-5">
               <div>
-              <!-- <h3><i class="fa fa-star svc-icon" aria-hidden="true"></i></h3> -->
-              <img src="img/ptTape800.jpg" alt="pt diagram" class="img-responsive center-block">
-                <div>
-                  <h2>Recover</h2>
-                  <p>Untraditional Physical Therapy &#8212; an hour or more of manual therapy by the sole practitioner with over 20 years of experience treating a myriad of injuries and syndromes.  Can provide wide referral base of MD&#8208;s, Massage Therapists and Acupuncturists, Cranial Sacral Therapists and Feldenkrais Therapists as well as Personal Trainers as necessary and appropriate</p>
-                </div>
+                <img src="img/ptTape800.jpg" alt="pt diagram" class="img-responsive center-block">
+                  <div>
+                    <h2>Recover</h2>
+                    <p>Untraditional Physical Therapy &#8212; an hour or more of manual therapy by the sole practitioner with over 20 years of experience treating a myriad of injuries and syndromes.  Can provide wide referral base of MD&#8208;s, Massage Therapists and Acupuncturists, Cranial Sacral Therapists and Feldenkrais Therapists as well as Personal Trainers as necessary and appropriate</p>
+                  </div>
               </div>
             </div>  <!-- col-md-5 -->
             <div class="col-md-5 col-md-offset-2">
-              <!-- <h3><i class="fa fa-check svc-icon" aria-hidden="true"></i></h3> -->
               <div>
                 <img src="img/spin800.jpg" alt="" class="img-responsive center-block">
-                <div>
-                  <h2>Achieve</h2>
-                  <p>Can provide sports specific training to return to the highest level of function. Often provides continuous treatment throughout a training period, ie, the Marathon, to ensure best possible function and performance.</p> 
-                  <p>Can orient recent &#34;graduates&#34; to classes, ie, Spin, by attending and riding with them to guarantee personal set up/best form as well as best performance &#40;and that no bad habits start&#41;.</p>
-                </div>
+                  <div>
+                    <h2>Achieve</h2>
+                    <p>Can provide sports specific training to return to the highest level of function. Often provides continuous treatment throughout a training period, ie, the Marathon, to ensure best possible function and performance.</p> 
+                    <p>Can orient recent &#34;graduates&#34; to classes, ie, Spin, by attending and riding with them to guarantee personal set up/best form as well as best performance &#40;and that no bad habits start&#41;.</p>
+                  </div>
               </div>
             </div>  <!-- col-md-5 -->
           </div> <!-- row -->
           <div class="row svc-second-row">
             <div class="col-md-5">
               <div>
-              <!-- <h3><i class="fa fa-heart svc-icon" aria-hidden="true"></i></h3> -->
-              <img src="img/pilates800.jpg" alt="pilates" class="img-responsive center-block">
-                <div>
-                  <h2>Evolve</h2>
-                  <p>Many graduates begin classes or a independent exercise program remarking &#8220;I never thought I could do this.&#8221; Can introduce virtually any type of exercise modality as requested. Can offer a wide array of fitness professionals for referral including Pilates, Gyrotonic, Alexander Technique, Boxing, as well as others.</p>
-                </div>
+                <img src="img/pilates800.jpg" alt="pilates" class="img-responsive center-block">
+                  <div>
+                    <h2>Evolve</h2>
+                    <p>Many graduates begin classes or a independent exercise program remarking &#8220;I never thought I could do this.&#8221; Can introduce virtually any type of exercise modality as requested. Can offer a wide array of fitness professionals for referral including Pilates, Gyrotonic, Alexander Technique, Boxing, as well as others.</p>
+                  </div>
               </div>
             </div>  <!-- col-md-5 -->
             <div class="col-md-5 col-md-offset-2">
-              <!-- <h3><i class="fa fa-users svc-icon" aria-hidden="true"></i></h3> -->
               <img src="img/transform.jpg" alt="pilates" class="img-responsive center-block">
-              <div>
-                <h2>Transform</h2>
-                <p>Attends class regularly with patients to ensure that no issues arise. Often bridges the gap toward &#34;graduation&#34; by attending classes as a support/observer ensuring proper form and that no relapse occurs.</p> 
-                <p id="transform-second">Can offer private Pilates &#8212; Concept training related to physical therapy issues or as adjunctive treatment.</p>
-              </div>
+                <div>
+                  <h2>Transform</h2>
+                  <p>Attends class regularly with patients to ensure that no issues arise. Often bridges the gap toward &#34;graduation&#34; by attending classes as a support/observer ensuring proper form and that no relapse occurs.</p> 
+                  <p id="transform-second">Can offer private Pilates &#8212; Concept training related to physical therapy issues or as adjunctive treatment.</p>
+                </div>
             </div>  <!-- col-md-5 -->
         </div> <!-- row -->
       </div> <!-- container -->
       </div> <!-- container -->
     </section>
 
-  <!-- Yoga Image -->
-    <!-- <div class="yoga"> -->
+    <!-- Yoga Image -->
     <div id="yoga">
       <div class="yoga-img" data-stellar-background-ratio="0.5">
         <div class="container">
