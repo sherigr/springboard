@@ -4,7 +4,7 @@
 		
   	
 
-  		// Fixed header
+  		// FIXED HEADER
 		//-----------------------------------------------
 
 		$(window).scroll(function() {
@@ -18,14 +18,6 @@
 					$("img.logo-color").attr('src', 'img/springboard75white.png');
 				}
 			};
-			//parallax works but img drops on scroll
-		  // var yPos =-($(window).scrollTop() / 6);
-		  // if($(window).scrollTop() > 100) {
-		  //   document.getElementById("banner-img").style.backgroundPosition="100% "+yPos+"px";
-		  // }
-		  // if($(window).scrollTop() < 100)  {		 
-		  //   document.getElementById("banner-img").style.backgroundPosition="50% 50%";
-		  // }
 		});
 
 
@@ -46,7 +38,7 @@
     });
 
 
-			//Scroll Spy
+			//SCROLL SPY
 		//-----------------------------------------------
 		if($(".scrollspy").length>0) {
 			$("body").addClass("scroll-spy");
@@ -68,9 +60,7 @@
 
 
 	
-			//Smooth Scroll
-		//-----------------------------------------------
-		//Smooth Scroll - breaking footer
+			//SMOOTH SCROLL
 		//-----------------------------------------------
 		$('a[href*="#"]:not([href="#"])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -86,14 +76,13 @@
 		  });
 
 
-   // FOOTER
+    // FOOTER
   //---------------------------------------------------
 
   var today = new Date();
   var year = today.getFullYear();
 
    $('#footer').html('<p>&copy ' + year + ' Springboard</p>');
-
 
 
 	});
