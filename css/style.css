@@ -94,7 +94,8 @@ p {
 .main-navigation .navbar-default .navbar-nav > li.active > a {
   background-color: transparent;
   /*color: #FFFF00; */ /* yellow */
-  color: #A5FFE0; /* turquois */
+  /*color: #A5FFE0;*/ /* turquois */
+  color: #12a162; /* greenish*/
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
