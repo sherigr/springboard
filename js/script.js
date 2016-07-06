@@ -28,6 +28,7 @@
 					$(".springboard-slogan").css({'display':'none'});
 				} else {
 					$("body").removeClass("fixed-header-on");
+					$("img.logo-color").attr('src', 'img/springboard75white.png');
 				}
 			};
 		});
