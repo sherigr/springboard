@@ -339,7 +339,11 @@ p {
     padding: 25px 20px;
   }
 }
-
+@media (min-width: 730px) and (max-width: 732px) and (orientation: landscape) {
+  .fixed-header-on .header {
+    padding-bottom: 10px;
+  }
+}
 @media (max-width: 667px) {
   .springboard-logo img {
    height: 60px; 
