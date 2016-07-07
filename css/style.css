@@ -211,7 +211,7 @@ p {
   letter-spacing: 2px;
   color: #fff;
   text-shadow: 3px 3px #000;
-  position: absolute;
+ /* position: absolute;*/
 }
 
 /***********************
@@ -449,6 +449,7 @@ p {
     width: 50%;
   }
 }
+
 @media (max-width: 320px) {
   .banner-text h1 {
     font-size: 35px;
