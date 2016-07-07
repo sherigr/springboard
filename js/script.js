@@ -53,11 +53,13 @@
 
 		// Stellar.js Div
 		//-----------------------------------------------
-		$.stellar({
-			horizontalScrolling: false,
-			hideDistantElements: true,
-			// responsive: true
-		});
+			if($(window).width() > 768) {
+			$.stellar({
+				horizontalScrolling: false,
+				hideDistantElements: true,
+				// responsive: true
+			});	
+		}
 
 
 	
