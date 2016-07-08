@@ -57,7 +57,7 @@
 			$.stellar({
 				horizontalScrolling: false,
 				hideDistantElements: true,
-				// responsive: true
+				responsive: true
 			});	
 		}
 
