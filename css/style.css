@@ -216,6 +216,29 @@ p {
     width: 50%;
   }
 
+/***************************
+   ABOUT FIGURE CAPTION
+***************************/
+.about-figure {
+  display: block;          /* Ensure figure behaves as a full block container */
+  width: 100%;             /* Prevent side-by-side text wrapping */
+  text-align: center;      /* Center image + caption */
+}
+
+.about-figure img {
+  display: block;          /* Remove inline spacing that breaks caption flow */
+  margin: 0 auto;          /* Center image within figure */
+}
+
+.about-figure figcaption {
+  display: block;          /* Force proper stacking below image */
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #777;
+}
+ 
+
 /***********************
   CONTACT
 ***************************/
